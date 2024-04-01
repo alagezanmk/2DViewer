@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="bld">
+      <UniqueIdentifier>{54e5149d-0dc1-4c0a-84b3-c8bf17a93640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bld\File">
+      <UniqueIdentifier>{594fdc99-15e4-4bdc-9ef0-23d376ae377e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bld\File\Xml Dom File">
+      <UniqueIdentifier>{2493bacf-67d8-4dd8-8d6e-c875e61bafbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g">
+      <UniqueIdentifier>{9be32dc4-cd14-492b-9997-70464b3ef8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g\attr">
+      <UniqueIdentifier>{84df7d6b-1456-4450-ae01-19897a27705c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g\type">
+      <UniqueIdentifier>{6d18a985-a743-4a84-ba25-c8f1bcd5ed84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g\type\idom">
+      <UniqueIdentifier>{a7bf6e9c-b458-471a-8161-518007845715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g\tools">
+      <UniqueIdentifier>{7bd70016-719f-4947-9877-e506a473995b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="g\wnd">
+      <UniqueIdentifier>{3d0dfa03-62d8-49c9-a8c7-1c3bf20d83e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdom">
+      <UniqueIdentifier>{aa1b10f1-7f53-4013-a2f8-c13a59f8c4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv">
+      <UniqueIdentifier>{0b2783a2-1161-4379-b6fd-172c98520ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv\g.priv">
+      <UniqueIdentifier>{849d30cd-8753-4ab1-9b3c-db4d2ea870a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv\g.priv\type.priv">
+      <UniqueIdentifier>{6f5c0e28-c941-4908-8b44-c54ffefb5c80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gdom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\bApp.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\bmainfrm.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\bView.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\gEditView.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\gEditWnd.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\layer.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\page.cpp">
+      <Filter>bld</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\FileExport.cpp">
+      <Filter>bld\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\FileImport.cpp">
+      <Filter>bld\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gDomNodeImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gLineElmImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gPageElmImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gRectElmImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gTransformElmImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gViewElmImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gXmlDomExport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gXmlDomImport.cpp">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gAttrGroup.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gAttrLink.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gBoolAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gBoolAttrLink.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gColorAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gEnumAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gFloatAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gFloatAttrLink.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gInt16Attr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gInt32Attr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gInt64Attr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gMatrixAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gPointFAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gPointFAttrLink.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gRectFAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gStringAttr.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\attr\gViewBox.cpp">
+      <Filter>g\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\gElement.cpp">
+      <Filter>g\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\gNode.cpp">
+      <Filter>g\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\gViewPort.cpp">
+      <Filter>g\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giDocument.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giElement.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giGroup.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giLineElement.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giNode.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giNodeList.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giNodeMap.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giRectElement.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giShapeElement.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giTransformElement.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giView.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\giViewPort.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\type\idom\gUI.cpp">
+      <Filter>g\type\idom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\eGroupTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\eLineTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\eRectTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\eTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\eUITool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\pTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\sTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\uiTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\zpTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\tools\zTool.cpp">
+      <Filter>g\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\wnd\gPlayWnd.cpp">
+      <Filter>g\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\wnd\gViewWnd.cpp">
+      <Filter>g\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\wnd\gViewWndBase.cpp">
+      <Filter>g\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gdom\g\wnd\gWin.cpp">
+      <Filter>g\wnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdomD.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\gdom.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gdom.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\bapp.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\bmainfrm.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\bView.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\gEditView.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\gEditWnd.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\layer.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\page.h">
+      <Filter>bld</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\FileExport.h">
+      <Filter>bld\File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\FileImport.h">
+      <Filter>bld\File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gDomNodeImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gLineElmImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gPageElmImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gRectElmImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gTransformElmImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gViewElmImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gXmlDomExport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gXmlDomImport.h">
+      <Filter>bld\File\Xml Dom File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gAttrGroup.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gAttrLink.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gAttrTypes.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gBoolAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gBoolAttrLink.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gColorAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gEnumAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gFloatAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gFloatAttrLink.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gInt16Attr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gInt32Attr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gInt64Attr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gIntAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gMatrixAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gNodeAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gPointFAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gPointFAttrLink.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gRectAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gStringAttr.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\attr\gViewBox.h">
+      <Filter>g\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\gElement.h">
+      <Filter>g\type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\gNode.h">
+      <Filter>g\type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\gViewPort.h">
+      <Filter>g\type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giDocument.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giGroup.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giLineElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giNode.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giNodeList.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giNodeMap.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giRectElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giShapeElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giStyleElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giTransformElement.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giView.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\giViewPort.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\type\idom\gUI.h">
+      <Filter>g\type\idom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\eGroupTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\eLineTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\eRectTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\eTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\eUITool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\pTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\sTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\uiTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\zpTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\tools\zTool.h">
+      <Filter>g\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\wnd\gPlayWnd.h">
+      <Filter>g\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\wnd\gViewWnd.h">
+      <Filter>g\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\wnd\gViewWndBase.h">
+      <Filter>g\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\g\wnd\gWin.h">
+      <Filter>g\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gdom\gdom.l.h">
+      <Filter>gdom</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\g\type\gElementPriv.h">
+      <Filter>priv\g.priv\type.priv</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gdom.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

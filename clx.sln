@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "prj\test\test.vcxproj", "{4668CB39-8BBA-4593-B903-4DF8DBE29FEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cu", "prj\cu\cu.vcxproj", "{F865C7EB-25C7-4408-866E-8608E4A8A7CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdom", "prj\gdom\gdom.vcxproj", "{F9FC8D8D-768E-4886-9029-7C4E457882F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4668CB39-8BBA-4593-B903-4DF8DBE29FEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4668CB39-8BBA-4593-B903-4DF8DBE29FEE}.Debug|Win32.Build.0 = Debug|Win32
+		{4668CB39-8BBA-4593-B903-4DF8DBE29FEE}.Release|Win32.ActiveCfg = Release|Win32
+		{4668CB39-8BBA-4593-B903-4DF8DBE29FEE}.Release|Win32.Build.0 = Release|Win32
+		{F865C7EB-25C7-4408-866E-8608E4A8A7CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F865C7EB-25C7-4408-866E-8608E4A8A7CD}.Debug|Win32.Build.0 = Debug|Win32
+		{F865C7EB-25C7-4408-866E-8608E4A8A7CD}.Release|Win32.ActiveCfg = Release|Win32
+		{F865C7EB-25C7-4408-866E-8608E4A8A7CD}.Release|Win32.Build.0 = Release|Win32
+		{F9FC8D8D-768E-4886-9029-7C4E457882F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F9FC8D8D-768E-4886-9029-7C4E457882F4}.Debug|Win32.Build.0 = Debug|Win32
+		{F9FC8D8D-768E-4886-9029-7C4E457882F4}.Release|Win32.ActiveCfg = Release|Win32
+		{F9FC8D8D-768E-4886-9029-7C4E457882F4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A1BBBF4-DC9E-4127-A91C-05FE08045C1F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="cu">
+      <UniqueIdentifier>{9c4ce3fe-8ad5-4987-aaed-34090088c6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gl">
+      <UniqueIdentifier>{667cc09e-bbb9-48c7-9d17-10459552d5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctrl">
+      <UniqueIdentifier>{91b1bf6f-0a54-4dcf-a299-5d1a3ad152dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctrl\layer">
+      <UniqueIdentifier>{987575b3-91e3-4ec4-91c8-0b5d6f7a4393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctrl\style">
+      <UniqueIdentifier>{cf9584cc-a51d-4adc-8ce1-ccb7c01ca5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gbase">
+      <UniqueIdentifier>{08c88646-0177-4719-bd40-f04597e00a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv">
+      <UniqueIdentifier>{08281e11-f6db-43c0-ab20-1f9b5a24d6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv\g.priv">
+      <UniqueIdentifier>{ac80d341-ebee-4d92-be46-43f91d094a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="priv\g.priv\type.priv">
+      <UniqueIdentifier>{64459790-9361-49c4-bfce-0dc81c6e86bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop">
+      <UniqueIdentifier>{f3f77eca-8cd2-4801-b53b-f21476e8ea12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Definitions">
+      <UniqueIdentifier>{483b33f3-3a6b-48dd-bc13-1e678a1c3f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Controls">
+      <UniqueIdentifier>{bb600183-0873-48ac-afc0-5b29cff825ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Controls\Prop Item List Control">
+      <UniqueIdentifier>{024b0ce0-95d2-4a4e-b018-d3627dc48355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Controls\Object Selection Combo Box">
+      <UniqueIdentifier>{7e960b62-749a-4976-b1be-0f189a0e25d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Item">
+      <UniqueIdentifier>{61685320-1b18-4e4c-8cae-98ef46fe1bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prop\Item\Control">
+      <UniqueIdentifier>{fd3d3296-a46a-416d-8788-86644d621f91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\alx.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\BinStream.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\ChildFrmi.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\file.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\file.win.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\key.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\MainFrmi.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\MemDC.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\Msg.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\RectTrackEx.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\Reg.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\RulerWnd.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\ui.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\uiEvent.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\uiState.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\Unicode.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\ViewTabBar.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\win.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\WinAppi.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\XmlReader.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cu\XmlWriter.cpp">
+      <Filter>cu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\gCoord.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\gCoordF.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\Gdi.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\Gdip.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\GdipGC.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\gl.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\gUnit.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl\WinGC.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\MSComboBox.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\MSListBox.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\MSTreeCtrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ODComboBox.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\sizecbar.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\SlimScollBar.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\SlimTab.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\TabCtrlEx.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ToolBox.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ToolFrmWnd.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayer.cpp">
+      <Filter>ctrl\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerBar.cpp">
+      <Filter>ctrl\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerCtrl.cpp">
+      <Filter>ctrl\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerGrp.cpp">
+      <Filter>ctrl\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerListView.cpp">
+      <Filter>ctrl\layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ColorPickerDlg.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\IccColorStyle.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjStyle.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\Palette.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\PaletteBar.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\Style.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\StyleWnd.cpp">
+      <Filter>ctrl\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gClassFactory.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gEvent.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gEventNode.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gObject.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gObjectNode.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gbase\gType.cpp">
+      <Filter>gbase</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\g\type\gEventPriv.cpp">
+      <Filter>priv\g.priv\type.priv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropMap.cpp">
+      <Filter>prop\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropBox.cpp">
+      <Filter>prop\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropBoxBar.cpp">
+      <Filter>prop\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropItemListCtrl.cpp">
+      <Filter>prop\Controls\Prop Item List Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropObjectSelComboBox.cpp">
+      <Filter>prop\Controls\Object Selection Combo Box</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropObjectSelListCtrl.cpp">
+      <Filter>prop\Controls\Object Selection Combo Box</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\DefProp.cpp">
+      <Filter>prop\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\MSProp.cpp">
+      <Filter>prop\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\Prop.cpp">
+      <Filter>prop\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropDef.cpp">
+      <Filter>prop\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropBtn.cpp">
+      <Filter>prop\Item\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropComboBox.cpp">
+      <Filter>prop\Item\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropEdit.cpp">
+      <Filter>prop\Item\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prop\PropMSComboBox.cpp">
+      <Filter>prop\Item\Control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\alx.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\BinStream.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\ChildFrmi.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\cu.l.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\file.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\file.win.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\Key.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\key.win.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\MainFrmi.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\MemDC.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\Msg.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\RectTrackEx.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\Reg.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\RulerWnd.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\SyncObject.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\ui.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\uiEvent.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\uiState.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\Unicode.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\ViewTabBar.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\win.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\WinAppi.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\XmlReader.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cu\XmlWriter.h">
+      <Filter>cu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\g.l.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gCoord.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gCoordF.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\Gdi.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\Gdip.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\GdipGC.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gMatrixF.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gMatrixFInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gPoint.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gPointF.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gPointFInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gPointInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gRect.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gRectF.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gRectFInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gRectInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gSize.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gSizeF.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gSizeFInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gSizeInl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\gUnit.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl\WinGC.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\MSComboBox.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\MSListBox.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\MSTreeCtrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ODComboBox.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ODComboBoxPriv.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\sizecbar.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\SlimScollBar.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\SlimTab.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\TabCtrlEx.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ToolBox.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ToolFrmWnd.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjLayer.h">
+      <Filter>ctrl\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjLayerBar.h">
+      <Filter>ctrl\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjLayerCtrl.h">
+      <Filter>ctrl\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjLayerGrp.h">
+      <Filter>ctrl\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjLayerListView.h">
+      <Filter>ctrl\layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ColorPickerDlg.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\GradStyle.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\IccColorStyle.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\ObjStyle.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\Palette.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\PaletteBar.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\PaletteCtrl.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\Style.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ctrl\StyleWnd.h">
+      <Filter>ctrl\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gClassFactory.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gEvent.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gEventNode.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gEventStruct.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gMutationEventLink.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gObject.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gObjectNode.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gbase\gType.h">
+      <Filter>gbase</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\g\type\gEventPriv.h">
+      <Filter>priv\g.priv\type.priv</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\g\type\gPriv.h">
+      <Filter>priv\g.priv\type.priv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropItemCtrl.h">
+      <Filter>prop\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropRes.h">
+      <Filter>prop\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PsPropMap.h">
+      <Filter>prop\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PsPropRes.h">
+      <Filter>prop\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropBox.h">
+      <Filter>prop\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropBoxBar.h">
+      <Filter>prop\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropItemListCtrl.h">
+      <Filter>prop\Controls\Prop Item List Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropObjectSelComboBox.h">
+      <Filter>prop\Controls\Object Selection Combo Box</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropObjectSelListCtrl.h">
+      <Filter>prop\Controls\Object Selection Combo Box</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\DefProp.h">
+      <Filter>prop\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\MSProp.h">
+      <Filter>prop\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\Prop.h">
+      <Filter>prop\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropDef.h">
+      <Filter>prop\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropBtn.h">
+      <Filter>prop\Item\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropComboBox.h">
+      <Filter>prop\Item\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropEdit.h">
+      <Filter>prop\Item\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prop\PropMSComboBox.h">
+      <Filter>prop\Item\Control</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cu.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cu.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\hair.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\pointer_.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\zoom_out.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="src\cu\msxml.tlh">
+      <Filter>cu</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LyrStatusBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LyrToolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PropBtn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolsbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

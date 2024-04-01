@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9FC8D8D-768E-4886-9029-7C4E457882F4}</ProjectGuid>
+    <RootNamespace>gdom</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\output\bin\</OutDir>
+    <IntDir>..\..\..\output\gdom\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\.;.\;src\;private\;.\src\gdom\;..\cu\src\;..\cu\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;WIN32;_WINDOWS;_DEBUG;_AFXEXT;_GDOM_EXT;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <ModuleDefinitionFile>.\gdom.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>.\gdom.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="gdom.cpp" />
+    <ClCompile Include="src\gdom\bld\bApp.cpp" />
+    <ClCompile Include="src\gdom\bld\bmainfrm.cpp" />
+    <ClCompile Include="src\gdom\bld\bView.cpp" />
+    <ClCompile Include="src\gdom\bld\File\FileExport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\FileImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gDomNodeImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gLineElmImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gPageElmImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gRectElmImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gTransformElmImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gViewElmImport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gXmlDomExport.cpp" />
+    <ClCompile Include="src\gdom\bld\File\Xml DOM File\gXmlDomImport.cpp" />
+    <ClCompile Include="src\gdom\bld\gEditView.cpp" />
+    <ClCompile Include="src\gdom\bld\gEditWnd.cpp" />
+    <ClCompile Include="src\gdom\bld\layer.cpp" />
+    <ClCompile Include="src\gdom\bld\page.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gAttrGroup.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gAttrLink.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gBoolAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gBoolAttrLink.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gColorAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gEnumAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gFloatAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gFloatAttrLink.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gInt16Attr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gInt32Attr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gInt64Attr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gMatrixAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gPointFAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gPointFAttrLink.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gRectFAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gStringAttr.cpp" />
+    <ClCompile Include="src\gdom\g\attr\gViewBox.cpp" />
+    <ClCompile Include="src\gdom\g\tools\eGroupTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\eLineTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\eRectTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\eTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\eUITool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\pTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\sTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\uiTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\zpTool.cpp" />
+    <ClCompile Include="src\gdom\g\tools\zTool.cpp" />
+    <ClCompile Include="src\gdom\g\type\gElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\gNode.cpp" />
+    <ClCompile Include="src\gdom\g\type\gViewPort.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giDocument.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giGroup.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giLineElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giNode.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giNodeList.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giNodeMap.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giRectElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giShapeElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giTransformElement.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giView.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\giViewPort.cpp" />
+    <ClCompile Include="src\gdom\g\type\idom\gUI.cpp" />
+    <ClCompile Include="src\gdom\g\wnd\gPlayWnd.cpp" />
+    <ClCompile Include="src\gdom\g\wnd\gViewWnd.cpp" />
+    <ClCompile Include="src\gdom\g\wnd\gViewWndBase.cpp" />
+    <ClCompile Include="src\gdom\g\wnd\gWin.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gdom.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="gdomD.def" />
+    <None Include="res\gdom.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gdom.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Private\g\type\gElementPriv.h" />
+    <ClInclude Include="src\gdom\bld\bapp.h" />
+    <ClInclude Include="src\gdom\bld\bmainfrm.h" />
+    <ClInclude Include="src\gdom\bld\bView.h" />
+    <ClInclude Include="src\gdom\bld\File\FileExport.h" />
+    <ClInclude Include="src\gdom\bld\File\FileImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gDomNodeImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gLineElmImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gPageElmImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gRectElmImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gTransformElmImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gViewElmImport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gXmlDomExport.h" />
+    <ClInclude Include="src\gdom\bld\File\Xml DOM File\gXmlDomImport.h" />
+    <ClInclude Include="src\gdom\bld\gEditView.h" />
+    <ClInclude Include="src\gdom\bld\gEditWnd.h" />
+    <ClInclude Include="src\gdom\bld\layer.h" />
+    <ClInclude Include="src\gdom\bld\page.h" />
+    <ClInclude Include="src\gdom\gdom.l.h" />
+    <ClInclude Include="src\gdom\g\attr\gAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gAttrGroup.h" />
+    <ClInclude Include="src\gdom\g\attr\gAttrLink.h" />
+    <ClInclude Include="src\gdom\g\attr\gAttrTypes.h" />
+    <ClInclude Include="src\gdom\g\attr\gBoolAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gBoolAttrLink.h" />
+    <ClInclude Include="src\gdom\g\attr\gColorAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gEnumAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gFloatAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gFloatAttrLink.h" />
+    <ClInclude Include="src\gdom\g\attr\gInt16Attr.h" />
+    <ClInclude Include="src\gdom\g\attr\gInt32Attr.h" />
+    <ClInclude Include="src\gdom\g\attr\gInt64Attr.h" />
+    <ClInclude Include="src\gdom\g\attr\gIntAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gMatrixAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gNodeAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gPointFAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gPointFAttrLink.h" />
+    <ClInclude Include="src\gdom\g\attr\gRectAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gStringAttr.h" />
+    <ClInclude Include="src\gdom\g\attr\gViewBox.h" />
+    <ClInclude Include="src\gdom\g\tools\eGroupTool.h" />
+    <ClInclude Include="src\gdom\g\tools\eLineTool.h" />
+    <ClInclude Include="src\gdom\g\tools\eRectTool.h" />
+    <ClInclude Include="src\gdom\g\tools\eTool.h" />
+    <ClInclude Include="src\gdom\g\tools\eUITool.h" />
+    <ClInclude Include="src\gdom\g\tools\pTool.h" />
+    <ClInclude Include="src\gdom\g\tools\sTool.h" />
+    <ClInclude Include="src\gdom\g\tools\uiTool.h" />
+    <ClInclude Include="src\gdom\g\tools\zpTool.h" />
+    <ClInclude Include="src\gdom\g\tools\zTool.h" />
+    <ClInclude Include="src\gdom\g\type\gElement.h" />
+    <ClInclude Include="src\gdom\g\type\gNode.h" />
+    <ClInclude Include="src\gdom\g\type\gViewPort.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giDocument.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giGroup.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giLineElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giNode.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giNodeList.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giNodeMap.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giRectElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giShapeElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giStyleElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giTransformElement.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giView.h" />
+    <ClInclude Include="src\gdom\g\type\idom\giViewPort.h" />
+    <ClInclude Include="src\gdom\g\type\idom\gUI.h" />
+    <ClInclude Include="src\gdom\g\wnd\gPlayWnd.h" />
+    <ClInclude Include="src\gdom\g\wnd\gViewWnd.h" />
+    <ClInclude Include="src\gdom\g\wnd\gViewWndBase.h" />
+    <ClInclude Include="src\gdom\g\wnd\gWin.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cu\cu.vcxproj">
+      <Project>{f865c7eb-25c7-4408-866e-8608e4a8a7cd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

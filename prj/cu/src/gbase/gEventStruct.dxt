@@ -1,0 +1,7 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// \def DECLARE_EVENT_LINK()
+/// The classes derived from CGEventListener provides a Event linking to link a 
+/// event to function. Declare the macro DECLARE_EVENT_LINK() in your class definition 
+/// and in the .cpp file use BEGIN_EVENT_LINK() and END_EVENT_LINK(). In between these 
+/// two macros, declare EVENT LINK macros to map a function for Event.
+

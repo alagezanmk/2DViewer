@@ -1,0 +1,6 @@
+; gdom.def : Declares the module parameters for the DLL.
+
+LIBRARY      "gdomD"
+
+EXPORTS
+    ; Explicit exports can go here

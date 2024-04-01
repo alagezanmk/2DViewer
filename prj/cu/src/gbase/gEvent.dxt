@@ -1,0 +1,34 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// \class CGEventListener gEvent.h gbase\gEvent.h
+/// This is serves as a base class for receiving CGEvent(s) dispatched from a CGEventTarget.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// \fn	virtual void CGEventListener::HandleEvent( CGEvent& rEvent )
+/// This function is default Handler for any CGEvent is dispatched to the object. 
+/// Override this function to handle any CGEvent(s). As alternate EVENT LINK macros \b DECLARE_EVENT_LINK(), 
+/// \b BEGIN_EVENT_LINK(), \b END_EVENT_LINK()can used to to map CGEvent to specific function. 
+/// \sa DECLARE_EVENT_LINK(), BEGIN_EVENT_LINK(), END_EVENT_LINK()
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// \class CGEventTarget gEvent.h gbase\gEvent.h
+/// This base class provides Event Model methods of Dispatch CGEvent, 
+/// addition and removal of a CGEventListener.
+
+/// \fn BOOL CGEventTarget::AddEventListener( LPCTSTR pctszType, CGEventListener& rListener, BOOL bUseCapture )
+/// This function adds a \b rListener as event listener for an event type \b pctszType. If the \b rListener 
+/// has been added as listener for the same type paramters \b pctszType and \b bUseCapture, the function will 
+/// not add the rListener and the return a value will be FALSE.
+///
+/// \param pctszType
+/// Specifices the Event Type for which the given listener to be added.
+///
+/// \param rListener
+/// Specifices the reference of a listener which to be added.
+///
+/// \param bUseCapture
+/// If TRUE, the event listener will be added for CGEvent::CAPTURING_PHASE, otherwise 
+/// it will be added for CGEvent::AT_TARGET and CGEvent::BUBBLING_PHASE.
+///
+/// \return The return value is TRUE if the listener added sucessful, otherwise FALSE.
+
+

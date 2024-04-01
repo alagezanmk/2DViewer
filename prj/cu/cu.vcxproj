@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F865C7EB-25C7-4408-866E-8608E4A8A7CD}</ProjectGuid>
+    <RootNamespace>cu</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\output\bin\</OutDir>
+    <IntDir>..\..\..\output\cu\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;src\;private\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;WIN32;_WINDOWS;_DEBUG;_AFXEXT;_CU_EXT;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>.\src\prop;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <ModuleDefinitionFile>.\cu.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>.\cu.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cu.cpp" />
+    <ClCompile Include="Private\g\type\gEventPriv.cpp" />
+    <ClCompile Include="src\Ctrl\ColorPickerDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\IccColorStyle.cpp" />
+    <ClCompile Include="src\Ctrl\MSComboBox.cpp" />
+    <ClCompile Include="src\Ctrl\MSListBox.cpp" />
+    <ClCompile Include="src\Ctrl\MSTreeCtrl.cpp" />
+    <ClCompile Include="src\Ctrl\ObjLayer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerBar.cpp" />
+    <ClCompile Include="src\Ctrl\ObjLayerCtrl.cpp" />
+    <ClCompile Include="src\Ctrl\ObjLayerGrp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ObjLayerListView.cpp" />
+    <ClCompile Include="src\Ctrl\ObjStyle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\ODComboBox.cpp" />
+    <ClCompile Include="src\Ctrl\Palette.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\PaletteBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Ctrl\sizecbar.cpp" />
+    <ClCompile Include="src\Ctrl\SlimScollBar.cpp" />
+    <ClCompile Include="src\Ctrl\SlimTab.cpp" />
+    <ClCompile Include="src\Ctrl\Style.cpp" />
+    <ClCompile Include="src\Ctrl\StyleWnd.cpp" />
+    <ClCompile Include="src\Ctrl\TabCtrlEx.cpp" />
+    <ClCompile Include="src\Ctrl\ToolBox.cpp" />
+    <ClCompile Include="src\Ctrl\ToolFrmWnd.cpp" />
+    <ClCompile Include="src\cu\alx.cpp" />
+    <ClCompile Include="src\cu\BinStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\cu\ChildFrmi.cpp" />
+    <ClCompile Include="src\cu\file.cpp" />
+    <ClCompile Include="src\cu\file.win.cpp" />
+    <ClCompile Include="src\cu\key.cpp" />
+    <ClCompile Include="src\cu\MainFrmi.cpp" />
+    <ClCompile Include="src\cu\MemDC.cpp" />
+    <ClCompile Include="src\cu\Msg.cpp" />
+    <ClCompile Include="src\cu\RectTrackEx.cpp" />
+    <ClCompile Include="src\cu\Reg.cpp" />
+    <ClCompile Include="src\cu\RulerWnd.cpp" />
+    <ClCompile Include="src\cu\ui.cpp" />
+    <ClCompile Include="src\cu\uiEvent.cpp" />
+    <ClCompile Include="src\cu\uiState.cpp" />
+    <ClCompile Include="src\cu\Unicode.cpp" />
+    <ClCompile Include="src\cu\ViewTabBar.cpp" />
+    <ClCompile Include="src\cu\win.cpp" />
+    <ClCompile Include="src\cu\WinAppi.cpp" />
+    <ClCompile Include="src\cu\XmlReader.cpp" />
+    <ClCompile Include="src\cu\XmlWriter.cpp" />
+    <ClCompile Include="src\gbase\gClassFactory.cpp" />
+    <ClCompile Include="src\gbase\gEvent.cpp" />
+    <ClCompile Include="src\gbase\gEventNode.cpp" />
+    <ClCompile Include="src\gbase\gObject.cpp" />
+    <ClCompile Include="src\gbase\gObjectNode.cpp" />
+    <ClCompile Include="src\gbase\gType.cpp" />
+    <ClCompile Include="src\gl\gCoord.cpp" />
+    <ClCompile Include="src\gl\gCoordF.cpp" />
+    <ClCompile Include="src\gl\Gdi.cpp" />
+    <ClCompile Include="src\gl\Gdip.cpp" />
+    <ClCompile Include="src\gl\GdipGC.cpp" />
+    <ClCompile Include="src\gl\gl.cpp" />
+    <ClCompile Include="src\gl\gUnit.cpp" />
+    <ClCompile Include="src\gl\WinGC.cpp" />
+    <ClCompile Include="src\prop\DefProp.cpp" />
+    <ClCompile Include="src\prop\MSProp.cpp" />
+    <ClCompile Include="src\prop\Prop.cpp" />
+    <ClCompile Include="src\prop\PropBox.cpp" />
+    <ClCompile Include="src\prop\PropBoxBar.cpp" />
+    <ClCompile Include="src\prop\PropBtn.cpp" />
+    <ClCompile Include="src\prop\PropComboBox.cpp" />
+    <ClCompile Include="src\prop\PropDef.cpp" />
+    <ClCompile Include="src\prop\PropEdit.cpp" />
+    <ClCompile Include="src\prop\PropItemListCtrl.cpp" />
+    <ClCompile Include="src\prop\PropMap.cpp" />
+    <ClCompile Include="src\prop\PropMSComboBox.cpp" />
+    <ClCompile Include="src\prop\PropObjectSelComboBox.cpp" />
+    <ClCompile Include="src\prop\PropObjectSelListCtrl.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Private\g\type\gEventPriv.h" />
+    <ClInclude Include="Private\g\type\gPriv.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="src\Ctrl\ColorPickerDlg.h" />
+    <ClInclude Include="src\Ctrl\GradStyle.h" />
+    <ClInclude Include="src\Ctrl\IccColorStyle.h" />
+    <ClInclude Include="src\Ctrl\MSComboBox.h" />
+    <ClInclude Include="src\Ctrl\MSListBox.h" />
+    <ClInclude Include="src\Ctrl\MSTreeCtrl.h" />
+    <ClInclude Include="src\Ctrl\ObjLayer.h" />
+    <ClInclude Include="src\Ctrl\ObjLayerBar.h" />
+    <ClInclude Include="src\Ctrl\ObjLayerCtrl.h" />
+    <ClInclude Include="src\Ctrl\ObjLayerGrp.h" />
+    <ClInclude Include="src\Ctrl\ObjLayerListView.h" />
+    <ClInclude Include="src\Ctrl\ObjStyle.h" />
+    <ClInclude Include="src\Ctrl\ODComboBox.h" />
+    <ClInclude Include="src\Ctrl\ODComboBoxPriv.h" />
+    <ClInclude Include="src\Ctrl\Palette.h" />
+    <ClInclude Include="src\Ctrl\PaletteBar.h" />
+    <ClInclude Include="src\Ctrl\PaletteCtrl.h" />
+    <ClInclude Include="src\Ctrl\sizecbar.h" />
+    <ClInclude Include="src\Ctrl\SlimScollBar.h" />
+    <ClInclude Include="src\Ctrl\SlimTab.h" />
+    <ClInclude Include="src\Ctrl\Style.h" />
+    <ClInclude Include="src\Ctrl\StyleWnd.h" />
+    <ClInclude Include="src\Ctrl\TabCtrlEx.h" />
+    <ClInclude Include="src\Ctrl\ToolBox.h" />
+    <ClInclude Include="src\Ctrl\ToolFrmWnd.h" />
+    <ClInclude Include="src\cu\alx.h" />
+    <ClInclude Include="src\cu\BinStream.h" />
+    <ClInclude Include="src\cu\ChildFrmi.h" />
+    <ClInclude Include="src\cu\cu.l.h" />
+    <ClInclude Include="src\cu\file.h" />
+    <ClInclude Include="src\cu\file.win.h" />
+    <ClInclude Include="src\cu\Key.h" />
+    <ClInclude Include="src\cu\key.win.h" />
+    <ClInclude Include="src\cu\MainFrmi.h" />
+    <ClInclude Include="src\cu\MemDC.h" />
+    <ClInclude Include="src\cu\Msg.h" />
+    <ClInclude Include="src\cu\RectTrackEx.h" />
+    <ClInclude Include="src\cu\Reg.h" />
+    <ClInclude Include="src\cu\RulerWnd.h" />
+    <ClInclude Include="src\cu\SyncObject.h" />
+    <ClInclude Include="src\cu\ui.h" />
+    <ClInclude Include="src\cu\uiEvent.h" />
+    <ClInclude Include="src\cu\uiState.h" />
+    <ClInclude Include="src\cu\Unicode.h" />
+    <ClInclude Include="src\cu\ViewTabBar.h" />
+    <ClInclude Include="src\cu\win.h" />
+    <ClInclude Include="src\cu\WinAppi.h" />
+    <ClInclude Include="src\cu\XmlReader.h" />
+    <ClInclude Include="src\cu\XmlWriter.h" />
+    <ClInclude Include="src\gbase\gClassFactory.h" />
+    <ClInclude Include="src\gbase\gEvent.h" />
+    <ClInclude Include="src\gbase\gEventNode.h" />
+    <ClInclude Include="src\gbase\gEventStruct.h" />
+    <ClInclude Include="src\gbase\gMutationEventLink.h" />
+    <ClInclude Include="src\gbase\gObject.h" />
+    <ClInclude Include="src\gbase\gObjectNode.h" />
+    <ClInclude Include="src\gbase\gType.h" />
+    <ClInclude Include="src\gl\g.l.h" />
+    <ClInclude Include="src\gl\gCoord.h" />
+    <ClInclude Include="src\gl\gCoordF.h" />
+    <ClInclude Include="src\gl\Gdi.h" />
+    <ClInclude Include="src\gl\Gdip.h" />
+    <ClInclude Include="src\gl\GdipGC.h" />
+    <ClInclude Include="src\gl\gl.h" />
+    <ClInclude Include="src\gl\gMatrixF.h" />
+    <ClInclude Include="src\gl\gMatrixFInl.h" />
+    <ClInclude Include="src\gl\gPoint.h" />
+    <ClInclude Include="src\gl\gPointF.h" />
+    <ClInclude Include="src\gl\gPointFInl.h" />
+    <ClInclude Include="src\gl\gPointInl.h" />
+    <ClInclude Include="src\gl\gRect.h" />
+    <ClInclude Include="src\gl\gRectF.h" />
+    <ClInclude Include="src\gl\gRectFInl.h" />
+    <ClInclude Include="src\gl\gRectInl.h" />
+    <ClInclude Include="src\gl\gSize.h" />
+    <ClInclude Include="src\gl\gSizeF.h" />
+    <ClInclude Include="src\gl\gSizeFInl.h" />
+    <ClInclude Include="src\gl\gSizeInl.h" />
+    <ClInclude Include="src\gl\gUnit.h" />
+    <ClInclude Include="src\gl\WinGC.h" />
+    <ClInclude Include="src\prop\DefProp.h" />
+    <ClInclude Include="src\prop\MSProp.h" />
+    <ClInclude Include="src\prop\Prop.h" />
+    <ClInclude Include="src\prop\PropBox.h" />
+    <ClInclude Include="src\prop\PropBoxBar.h" />
+    <ClInclude Include="src\prop\PropBtn.h" />
+    <ClInclude Include="src\prop\PropComboBox.h" />
+    <ClInclude Include="src\prop\PropDef.h" />
+    <ClInclude Include="src\prop\PropEdit.h" />
+    <ClInclude Include="src\prop\PropItemCtrl.h" />
+    <ClInclude Include="src\prop\PropItemListCtrl.h" />
+    <ClInclude Include="src\prop\PropMSComboBox.h" />
+    <ClInclude Include="src\prop\PropObjectSelComboBox.h" />
+    <ClInclude Include="src\prop\PropObjectSelListCtrl.h" />
+    <ClInclude Include="src\prop\PropRes.h" />
+    <ClInclude Include="src\prop\PsPropMap.h" />
+    <ClInclude Include="src\prop\PsPropRes.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cu.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cu.rc2" />
+    <None Include="res\hair.cur" />
+    <None Include="res\hand.cur" />
+    <None Include="res\pointer_.cur" />
+    <None Include="res\zoom_out.cur" />
+    <None Include="src\cu\msxml.tlh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LyrStatusBar.bmp" />
+    <Image Include="res\LyrToolbar.bmp" />
+    <Image Include="res\PropBtn.bmp" />
+    <Image Include="res\toolsbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

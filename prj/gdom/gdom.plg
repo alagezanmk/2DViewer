@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: gdom - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Alag\LOCALS~1\Temp\RSP451.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\." /I ".\\" /I "src\\" /I "private\\" /I ".\src\gdom\\" /I "..\cu\src\\" /I "..\cu\private" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /D "_GDOM_EXT" /Fp"..\..\..\output\gdom\debug/gdom.pch" /Yu"stdafx.h" /Fo"..\..\..\output\gdom\debug/" /Fd"..\..\..\output\gdom\debug/" /FD /GZ /c 
+"D:\Users\Alagesan\Vcpp\Codebee\clx\prj\gdom\gdom.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Alag\LOCALS~1\Temp\RSP451.tmp" 
+Creating temporary file "C:\DOCUME~1\Alag\LOCALS~1\Temp\RSP452.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\..\output\gdom\debug/gdomD.pdb" /debug /machine:I386 /def:".\gdomD.def" /out:"..\..\..\output\bin\gdomD.dll" /implib:"..\..\..\output\gdom\debug/gdomD.lib" /pdbtype:sept 
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gdom.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\StdAfx.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gdom.res
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\bApp.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\bmainfrm.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\bView.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gEditView.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gEditWnd.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\layer.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\page.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\FileImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gDomNodeImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gLineElmImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gPageElmImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gRectElmImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gTransformElmImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gViewElmImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gXmlDomImport.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gPlayWnd.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gViewWnd.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gWin.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\eGroupTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\eLineTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\eRectTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\eTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\eUITool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\pTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\sTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\uiTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\zpTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\zTool.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gAttrGroup.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gBoolAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gColorAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gEnumAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gFloatAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gInt16Attr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gInt32Attr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gInt64Attr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gMatrixAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gPointFAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gRectFAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gStringAttr.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gViewBox.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gNode.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\gViewPort.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giContainer.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giDocument.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giGroup.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giLineElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giNode.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giNodeList.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giNodeMap.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giRectElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giShapeElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giTransformElement.obj
+\Users\Alagesan\Vcpp\Codebee\output\gdom\debug\giView.obj
+\Users\Alagesan\Vcpp\Codebee\output\cu\debug\cuD.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Alag\LOCALS~1\Temp\RSP452.tmp"
+<h3>Output Window</h3>
+Compiling...
+gdom.cpp
+Linking...
+   Creating library ..\..\..\output\gdom\debug/gdomD.lib and object ..\..\..\output\gdom\debug/gdomD.exp
+
+
+
+<h3>Results</h3>
+gdomD.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

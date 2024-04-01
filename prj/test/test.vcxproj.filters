@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Prop">
+      <UniqueIdentifier>{e2442427-e224-4201-8d94-1436d2bc8002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{33c18dab-01af-4f67-aa4a-dd347726655e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Viewer">
+      <UniqueIdentifier>{124659a2-b1b9-4537-8015-9bf700f4f5bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prop\ElementProp.cpp">
+      <Filter>Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBldChildFrm.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="testBldDoc.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="testBldView.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="TestViewChildFrm.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="testViewDoc.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="tesViewView.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prop\ElementProp.h">
+      <Filter>Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBldChildFrm.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="testBldDoc.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="testBldView.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="TestViewChildFrm.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="testViewDoc.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="testViewView.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\test.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\testDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="test.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\test.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
